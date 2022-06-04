@@ -1,2 +1,15 @@
-<h1>Books#show</h1>
-<p>Find me in app/views/books/show.html.erb</p>
+<%= form_with model: @book, url: books_path do |book| %>
+
+<h2>Title:</h2>
+<P><%= @book.title %></P>
+
+
+<h2>body:</h2>
+<p><%= @book.body %></p>
+
+<a class="edit"><%= link_to "Edit", edit_book_path(@book.id) %></a>
+|
+<a class="back"><%= link_to "Back", books_path(@book.id) %></a>
+	
+  
+<% end %>
