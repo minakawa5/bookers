@@ -1,11 +1,17 @@
+<body>
 <%= form_with model: @book, url: books_path do |book| %>
 
-<h2>Title:</h2>
-<P><%= @book.title %></P>
+<p>
+<strong>Title:</strong>
+<%= @book.title %>
+</p>
 
+<p>
 
-<h2>body:</h2>
-<p><%= @book.body %></p>
+<strong>body:</strong>
+<%= @book.body %>
+
+</p>
 
 <a class="edit"><%= link_to "Edit", edit_book_path(@book.id) %></a>
 |
@@ -13,3 +19,4 @@
 	
   
 <% end %>
+</body>

@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #fff
-  color: #333
+  background-color: #fff;
+  color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -24,7 +24,7 @@ td{
   }
 
 a{
-  color: #000
+  color: #000;
 }
 
 div.field{
@@ -36,5 +36,10 @@ div.actions{
 }
 
 .back{
-  color: #666
+  color: #666;
+}
+
+
+div.notice{
+  color: green;
 }

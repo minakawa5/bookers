@@ -1,11 +1,13 @@
 <h1>Books</h1>
 <table>
   <% @books.each do |book| %>
-
+<thead>
  <tr>
-   <th>Title</th><th>Body</th>
+   <th>Title</th>
+   <th>Body</th>
  </tr>
- 
+</thead>
+<tbody>
  <tr>
    
    <td><span><%= book.title %></span></td>
@@ -19,6 +21,7 @@
      <a class="dele"><%= link_to "Delete", book_path(book.id), method: :delete, "data-confirm" => "Are you sure？" %></a></td>
    
  </tr>
+ </tbody>
 <% end %>
 </table>
 
